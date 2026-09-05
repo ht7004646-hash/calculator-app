@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Smart Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app-container">
+
+    <section class="calculator">
+
+      <div class="calculator-header">
+        <div>
+          <p class="small-title">JavaScript Project</p>
+          <h1>Smart Calculator</h1>
+        </div>
+
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Change theme"
+        >
+          🌙
+        </button>
+      </div>
+
+      <div class="display-container">
+
+        <div
+          id="previousOperation"
+          class="previous-operation"
+        ></div>
+
+        <input
+          id="display"
+          class="display"
+          type="text"
+          value="0"
+          readonly
+        >
+
+      </div>
+
+      <div class="calculator-buttons">
+
+        <button
+          class="button action-button"
+          data-action="clear"
+        >
+          AC
+        </button>
+
+        <button
+          class="button action-button"
+          data-action="delete"
+        >
+          DEL
+        </button>
+
+        <button
+          class="button operator-button"
+          data-value="%"
+        >
+          %
+        </button>
+
+        <button
+          class="button operator-button"
+          data-value="/"
+        >
+          ÷
+        </button>
+
+        <button class="button number-button" data-value="7">7</button>
+        <button class="button number-button" data-value="8">8</button>
+        <button class="button number-button" data-value="9">9</button>
+
+        <button
+          class="button operator-button"
+          data-value="*"
+        >
+          ×
+        </button>
+
+        <button class="button number-button" data-value="4">4</button>
+        <button class="button number-button" data-value="5">5</button>
+        <button class="button number-button" data-value="6">6</button>
+
+        <button
+          class="button operator-button"
+          data-value="-"
+        >
+          −
+        </button>
+
+        <button class="button number-button" data-value="1">1</button>
+        <button class="button number-button" data-value="2">2</button>
+        <button class="button number-button" data-value="3">3</button>
+
+        <button
+          class="button operator-button"
+          data-value="+"
+        >
+          +
+        </button>
+
+        <button
+          class="button number-button zero-button"
+          data-value="0"
+        >
+          0
+        </button>
+
+        <button
+          class="button number-button"
+          data-value="."
+        >
+          .
+        </button>
+
+        <button
+          class="button equal-button"
+          data-action="calculate"
+        >
+          =
+        </button>
+
+      </div>
+
+      <div class="history-section">
+
+        <div class="history-header">
+          <h2>Calculation History</h2>
+
+          <button
+            id="clearHistory"
+            class="clear-history-button"
+            type="button"
+          >
+            Clear
+          </button>
+        </div>
+
+        <ul id="historyList" class="history-list">
+          <li class="empty-history">No calculations yet</li>
+        </ul>
+
+      </div>
+
+      <p class="footer-text">
+        Developed by Amrendra Kumar
+      </p>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
