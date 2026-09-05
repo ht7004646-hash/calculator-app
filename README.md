@@ -26,7 +26,3 @@ A modern and responsive Calculator built using HTML, CSS and Vanilla JavaScript.
 **himanshu tiwari**
 
 GitHub: https://github.com/ht7004646-hash
-
-## Live Demo
-
-https://ht7004646-hash.github.io/calculator-app/
